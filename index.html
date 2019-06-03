@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Itlize | Assignment 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <hr />
+      <h1 id="page-title">Please Enter Your Details For Our Dating Website!</h1>
+      <!-- box 1 -->
+      <div class="sub-container">
+        <div class="sub-container-title">Your Face</div>
+        <div class="content-box">
+          <div class="description-box">
+            <span>Your image:</span>
+            <span>Image preview:</span>
+          </div>
+          <div class="action-box">
+            <input type="file" />
+          </div>
+        </div>
+      </div>
+      <!-- box 2 -->
+      <div class="sub-container">
+        <div class="sub-container-title">Your General Details</div>
+        <div class="content-box">
+          <div class="description-box">
+            <span>Name:</span>
+            <span>Gender:</span>
+            <span>Age:</span>
+            <span>Date of birth:</span>
+            <span>Favorite color:</span>
+            <span>Which country:</span>
+          </div>
+          <div class="action-box">
+            <input type="text" name="name" placeholder="Your full name" />
+            <div class="check-boxes">
+              <input type="radio" name="male" value="Male" /> Male
+              <input type="radio" name="female" value="Female" /> Female
+            </div>
+            <input type="number" name="age" /> <br />
+            <input type="date" name="date" /> <br />
+            <input type="color" name="color" /> <br />
+            <select name="country" id="choose-country">
+              <option value="N/A">N/A</option>
+              <option value="United States">United States</option>
+              <option value="China">China</option>
+              <option value="Russia">Russia</option>
+              <option value="Jamaica">Jamaica</option>
+              <option value="Germany">Germany</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <!-- box 3 -->
+      <div class="sub-container">
+        <div class="sub-container-title">Your Indicators</div>
+        <div class="content-box">
+          <div class="description-box">
+            <span>Height:</span>
+            <span>Salary:</span>
+          </div>
+          <div class="action-box">
+            <div id="height-range">
+              <div class="low">Short</div>
+              <input type="range" />
+              <div class="high">Tall</div>
+            </div>
+            <div id="salary-range">
+              <div class="low">Poor</div>
+              <input type="range" />
+              <div class="high">Rich</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- box 4 -->
+      <div class="sub-container">
+        <div class="sub-container-title">Your Contact Information</div>
+        <div class="content-box">
+          <div class="description-box">
+            <span>Email:</span>
+            <span>Mobile:</span>
+            <span>Address:</span>
+            <span id="contact-method">Method to contact you:</span>
+          </div>
+          <div class="action-box">
+            <input type="email" name="email" /> <br />
+            <input type="text" name="mobile" /> <br />
+            <textarea rows="4" cols="35"></textarea>
+            <div id="contact-method-opts">
+              <input type="checkbox" name="email" value="Email" />Email
+              <input type="checkbox" name="whatsapp" value="Whatsapp" />Whatsapp
+              <input
+                type="checkbox"
+                name="in-app-chat"
+                value="In-app chat"
+              />In-app chat
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id="submit-btn">Submit!</button>
+      <hr />
+    </div>
+  </body>
+</html>
